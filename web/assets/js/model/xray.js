@@ -1179,7 +1179,7 @@ Inbound.VmessSettings = class extends Inbound.Settings {
     }
 };
 Inbound.VmessSettings.Vmess = class extends XrayCommonClass {
-    constructor(id=RandomUtil.randomUUID(), alterId=0, email='', limitIp=0, totalGB=0, expiryTime='') {
+    constructor(id=RandomUtil.randomUUID(), alterId=0, email='', limitIp=1, totalGB=0, expiryTime='') {
         super();
         this.id = id;
         this.alterId = alterId;
@@ -1263,7 +1263,7 @@ Inbound.VLESSSettings = class extends Inbound.Settings {
 };
 Inbound.VLESSSettings.VLESS = class extends XrayCommonClass {
 
-    constructor(id=RandomUtil.randomUUID(), flow=FLOW_CONTROL.DIRECT, email='', limitIp=0, totalGB=0, expiryTime='') {
+    constructor(id=RandomUtil.randomUUID(), flow=FLOW_CONTROL.DIRECT, email='', limitIp=1, totalGB=0, expiryTime='') {
         super();
         this.id = id;
         this.flow = flow;
